@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SCT.Mobile.Models.Congregacao">
+    <Position X="1" Y="5.5" Width="1.5" />
+    <Members>
+      <Field Name="ajudante" Hidden="true" />
+      <Field Name="dadosDaCongregacao" Hidden="true" />
+      <Field Name="nome" Hidden="true" />
+      <Field Name="previsao" Hidden="true" />
+      <Field Name="responsavel" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AQCAAAAAIQAAAAAEAAgAAAAAAAgAAAAIgAAgQAEAIAA=</HashCode>
+      <FileName>Models\Congregacao.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Saidas" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="SCT.Mobile.Models.Dependente">
+    <Position X="10" Y="0.75" Width="1.5" />
+    <Members>
+      <Method Name="Dependente" Hidden="true" />
+      <Field Name="documento" Hidden="true" />
+      <Field Name="nome" Hidden="true" />
+      <Field Name="tipoDocumento" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AQgAAAAAAAAAAAAEAAQAAAAAAAIABAACACQAAAEAAAA=</HashCode>
+      <FileName>Models\Dependente.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SCT.Mobile.Models.Evento">
+    <Position X="1" Y="1.25" Width="1.5" />
+    <Members>
+      <Field Name="dataFinal" Hidden="true" />
+      <Field Name="dataInicial" Hidden="true" />
+      <Field Name="descricao" Hidden="true" />
+      <Field Name="tema" Hidden="true" />
+      <Field Name="valorPassagem" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>IAAAACgAAAAJAAAAAQAEAAAABAAAAAEAAAABAABAAAA=</HashCode>
+      <FileName>Models\Evento.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Dias" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="SCT.Mobile.Models.Passageiro" Collapsed="true">
+    <Position X="12.5" Y="0.75" Width="1.5" />
+    <Members>
+      <Field Name="ativo" Hidden="true" />
+      <Field Name="celular" Hidden="true" />
+      <Field Name="dataNascimento" Hidden="true" />
+      <Field Name="documento" Hidden="true" />
+      <Field Name="nome" Hidden="true" />
+      <Method Name="Passageiro" Hidden="true" />
+      <Field Name="tipoDocumento" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>CQAAAAAAAAAAAAAEAAUAAgABAAIABAACACQAAAkAAAA=</HashCode>
+      <FileName>Models\Passageiro.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SCT.Mobile.Models.Passagem">
+    <Position X="7" Y="1.25" Width="1.5" />
+    <Members>
+      <Field Name="dia" Hidden="true" />
+      <Field Name="evento" Hidden="true" />
+      <Field Name="grupo" Hidden="true" />
+      <Field Name="passageiro" Hidden="true" />
+      <Field Name="saida" Hidden="true" />
+      <Field Name="valorPago" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AEAAAAABACAAAUAgAAhAAAAIAgAAAAIAAAAAIABAAAA=</HashCode>
+      <FileName>Models\Passagem.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Dias" />
+      <Property Name="Dependentes" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="SCT.Mobile.Models.Saida">
+    <Position X="4" Y="6" Width="1.5" />
+    <Members>
+      <Field Name="bairro" Hidden="true" />
+      <Field Name="cidade" Hidden="true" />
+      <Field Name="complemento" Hidden="true" />
+      <Field Name="congregacao" Hidden="true" />
+      <Field Name="endereco" Hidden="true" />
+      <Field Name="horario" Hidden="true" />
+      <Field Name="latitude" Hidden="true" />
+      <Field Name="localizacao" Hidden="true" />
+      <Field Name="logradouro" Hidden="true" />
+      <Field Name="longitude" Hidden="true" />
+      <Field Name="numero" Hidden="true" />
+      <Field Name="uF" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>CAAAQAgAIEAgACKAAAAKgACACAAggAAAIAkQAAAJAAA=</HashCode>
+      <FileName>Models\Saida.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SCT.Mobile.Models.EventoDia">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <Members>
+      <Field Name="data" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAgAAABAAAAAQAAAAAAA=</HashCode>
+      <FileName>Models\EventoDia.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SCT.Mobile.Models.PassagemDia" Collapsed="true">
+    <Position X="14.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>Models\PassagemDia.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

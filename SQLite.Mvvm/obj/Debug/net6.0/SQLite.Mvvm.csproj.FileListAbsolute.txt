@@ -1,0 +1,15 @@
+C:\Projects\XAF\SCT2022\SCT\SQLite.Mvvm\bin\Debug\net6.0\SQLite.Mvvm.deps.json
+C:\Projects\XAF\SCT2022\SCT\SQLite.Mvvm\bin\Debug\net6.0\SQLite.Mvvm.dll
+C:\Projects\XAF\SCT2022\SCT\SQLite.Mvvm\bin\Debug\net6.0\SQLite.Mvvm.pdb
+C:\Projects\XAF\SCT2022\SCT\SQLite.Mvvm\bin\Debug\net6.0\SQLite.Service.dll
+C:\Projects\XAF\SCT2022\SCT\SQLite.Mvvm\bin\Debug\net6.0\SQLite.Service.pdb
+C:\Projects\XAF\SCT2022\SCT\SQLite.Mvvm\obj\Debug\net6.0\SQLite.Mvvm.csproj.AssemblyReference.cache
+C:\Projects\XAF\SCT2022\SCT\SQLite.Mvvm\obj\Debug\net6.0\SQLite.Mvvm.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\XAF\SCT2022\SCT\SQLite.Mvvm\obj\Debug\net6.0\SQLite.Mvvm.AssemblyInfoInputs.cache
+C:\Projects\XAF\SCT2022\SCT\SQLite.Mvvm\obj\Debug\net6.0\SQLite.Mvvm.AssemblyInfo.cs
+C:\Projects\XAF\SCT2022\SCT\SQLite.Mvvm\obj\Debug\net6.0\SQLite.Mvvm.csproj.CoreCompileInputs.cache
+C:\Projects\XAF\SCT2022\SCT\SQLite.Mvvm\obj\Debug\net6.0\SQLite.Mvvm.csproj.CopyComplete
+C:\Projects\XAF\SCT2022\SCT\SQLite.Mvvm\obj\Debug\net6.0\SQLite.Mvvm.dll
+C:\Projects\XAF\SCT2022\SCT\SQLite.Mvvm\obj\Debug\net6.0\refint\SQLite.Mvvm.dll
+C:\Projects\XAF\SCT2022\SCT\SQLite.Mvvm\obj\Debug\net6.0\SQLite.Mvvm.pdb
+C:\Projects\XAF\SCT2022\SCT\SQLite.Mvvm\obj\Debug\net6.0\ref\SQLite.Mvvm.dll

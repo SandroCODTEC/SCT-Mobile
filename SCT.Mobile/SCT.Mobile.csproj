@@ -1,0 +1,155 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net6.0-android</TargetFrameworks>
+        
+		<OutputType>Exe</OutputType>
+		<UseMaui>true</UseMaui>
+		<SingleProject>true</SingleProject>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<RootNamespace>SCT.Mobile</RootNamespace>
+
+		<!-- Display name -->
+		<ApplicationTitle>SCT.Mobile</ApplicationTitle>
+
+		<!-- App Identifier -->
+		<ApplicationId>com.codtec.newsct</ApplicationId>
+
+		<!-- Versions -->
+		<ApplicationVersion>1</ApplicationVersion>
+		<AndroidVersionCode>1</AndroidVersionCode>
+		<SupportedOSPlatformVersion Condition="'$(TargetFramework)' == 'net6.0-ios'">14.2</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="'$(TargetFramework)' == 'net6.0-android'">21.0</SupportedOSPlatformVersion>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<!-- App Icon -->
+		<MauiImage Include="Resources\appicon.svg" IsAppIcon="true" ForegroundFile="Resources\splashscreen.svg" Color="#FFFFFF" />
+
+		<!-- Splash Screen -->
+		<!--<MauiSplashScreen Include="Resources\splashscreen.svg" Color="#eb7607" BaseSize="128,128" />-->
+		<MauiSplashScreen Include="Resources\splashscreen.svg" Color="#cd5d0a" BaseSize="128,128" />
+
+
+		<!-- Images -->
+		<MauiImage Include="Resources\Images\*" />
+
+		<!-- Custom Fonts -->
+		<MauiFont Include="Resources\Fonts\*" />
+	</ItemGroup>
+
+
+	<ItemGroup>
+		<PackageReference Include="CommunityToolkit.Maui" Version="1.3.0" />
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.0.0" />
+		<PackageReference Include="DevExpress.Maui.Charts" Version="22.1.5" />
+		<PackageReference Include="DevExpress.Maui.CollectionView" Version="22.1.5" />
+		<PackageReference Include="DevExpress.Maui.Core" Version="22.1.5" />
+		<PackageReference Include="DevExpress.Maui.DataGrid" Version="22.1.5" />
+		<PackageReference Include="DevExpress.Maui.Editors" Version="22.1.5" />
+		<PackageReference Include="DevExpress.Maui.Scheduler" Version="22.1.5" />
+		<PackageReference Include="SQLiteNetExtensions" Version="2.1.0" />
+	</ItemGroup>
+
+
+	<ItemGroup>
+	  <ProjectReference Include="..\SQLite.Mvvm\SQLite.Mvvm.csproj" />
+	  <ProjectReference Include="..\SQLite.Service\SQLite.Service.csproj" />
+	</ItemGroup>
+
+
+	<ItemGroup>
+	  <Compile Update="Views\Congregacoes\CongregacaoEditPage.xaml.cs">
+	    <DependentUpon>CongregacaoEditPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\Eventos\EventoDetailPage.xaml.cs">
+	    <DependentUpon>EventoDetailPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\Eventos\EventoEditPage.xaml.cs">
+	    <DependentUpon>EventoEditPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\Eventos\EventoListPage.xaml.cs">
+	    <DependentUpon>EventoListPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\Eventos\EventoNewPage.xaml.cs">
+	    <DependentUpon>EventoNewPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\Passageiros\PassageiroListPage.xaml.cs">
+	    <DependentUpon>PassageiroListPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\Passageiros\PassageiroDetailPage.xaml.cs">
+	    <DependentUpon>PassageiroDetailPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\Passageiros\PassageiroEditPage.xaml.cs">
+	    <DependentUpon>PassageiroEditPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\Passagens\PassagemDetailPage.xaml.cs">
+	    <DependentUpon>PassagemDetailPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\Passagens\PassagemEditPage.xaml.cs">
+	    <DependentUpon>PassagemEditPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\Passagens\PassagemListPage.xaml.cs">
+	    <DependentUpon>PassagemListPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\Passagens\PassagemNewPage.xaml.cs">
+	    <DependentUpon>PassagemNewPage.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+
+	<ItemGroup>
+	  <MauiXaml Update="Views\Congregacoes\CongregacaoEditPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Eventos\EventoDetailPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Eventos\EventoEditPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Eventos\EventoListPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Eventos\EventoNewPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Passageiros\PassageiroListPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Passageiros\PassageiroNewPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Passageiros\PassageiroDetailPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Passageiros\PassageiroEditPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Passagens\PassagemDetailPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Passagens\PassagemEditPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Passagens\PassagemListPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Passagens\PassagemNewPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
+
+	<ItemGroup>
+	  <Folder Include="Resources\Splash\" />
+	  <Folder Include="Views\Dependentes\" />
+	</ItemGroup>
+
+	<PropertyGroup>
+		<UseInterpreter Condition="$(TargetFramework.Contains('-ios'))">True</UseInterpreter>
+		<UseInterpreter Condition="$(TargetFramework.Contains('-android'))">False</UseInterpreter>
+		<RuntimeIdentifiers Condition="$(TargetFramework.Contains('-android'))">android-arm;android-arm64;android-x86;android-x64</RuntimeIdentifiers>
+	</PropertyGroup>
+
+</Project>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell
+    x:Class="SCT.Mobile.Views.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:congregacoes="clr-namespace:SCT.Mobile.Views.Congregacoes"
+    xmlns:dxn="clr-namespace:DevExpress.Maui.Navigation;assembly=DevExpress.Maui.Navigation"
+    xmlns:local="clr-namespace:SCT.Mobile.Views"
+    xmlns:passageiros="clr-namespace:SCT.Mobile.Views.Passageiros"
+    Style="{StaticResource ShellStyle}">
+    <TabBar>
+        <Tab Icon="bo_congregacao" Title="Congregação">
+            <ShellContent ContentTemplate="{DataTemplate congregacoes:CongregacaoEditPage}" Route="CongregacaoEditPage" />
+        </Tab>
+        <Tab Icon="bo_passageiro" Title="Passageiros">
+            <ShellContent ContentTemplate="{DataTemplate passageiros:PassageiroListPage}" Route="PassageiroListPage" />
+        </Tab>
+    </TabBar>
+</Shell>

@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SQLite.Mvvm</name>
+    </assembly>
+    <members>
+        <member name="P:Mvvm.Cammon.ViewModels.BaseModel.BaseViewModel`3.IsBusy">
+            <inheritdoc cref="F:Mvvm.Cammon.ViewModels.BaseModel.BaseViewModel`3.isBusy"/>
+        </member>
+        <member name="P:Mvvm.Cammon.ViewModels.BaseModel.BaseViewModel`3.Title">
+            <inheritdoc cref="F:Mvvm.Cammon.ViewModels.BaseModel.BaseViewModel`3.title"/>
+        </member>
+        <member name="P:Mvvm.Cammon.ViewModels.BaseModel.DetailBaseViewModel`5.Item">
+            <inheritdoc cref="F:Mvvm.Cammon.ViewModels.BaseModel.DetailBaseViewModel`5.item"/>
+        </member>
+        <member name="F:Mvvm.Cammon.ViewModels.BaseModel.DetailBaseViewModel`5.editItemCommand">
+            <summary>The backing field for <see cref="P:Mvvm.Cammon.ViewModels.BaseModel.DetailBaseViewModel`5.EditItemCommand"/>.</summary>
+        </member>
+        <member name="P:Mvvm.Cammon.ViewModels.BaseModel.DetailBaseViewModel`5.EditItemCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Mvvm.Cammon.ViewModels.BaseModel.DetailBaseViewModel`5.EditItemAsync"/>.</summary>
+        </member>
+        <member name="F:Mvvm.Cammon.ViewModels.BaseModel.DetailBaseViewModel`5.deleteItemCommand">
+            <summary>The backing field for <see cref="P:Mvvm.Cammon.ViewModels.BaseModel.DetailBaseViewModel`5.DeleteItemCommand"/>.</summary>
+        </member>
+        <member name="P:Mvvm.Cammon.ViewModels.BaseModel.DetailBaseViewModel`5.DeleteItemCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Mvvm.Cammon.ViewModels.BaseModel.DetailBaseViewModel`5.DeleteItemAsync"/>.</summary>
+        </member>
+        <member name="F:Mvvm.Cammon.ViewModels.BaseModel.DetailBaseViewModel`5.cancelCommand">
+            <summary>The backing field for <see cref="P:Mvvm.Cammon.ViewModels.BaseModel.DetailBaseViewModel`5.CancelCommand"/>.</summary>
+        </member>
+        <member name="P:Mvvm.Cammon.ViewModels.BaseModel.DetailBaseViewModel`5.CancelCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Mvvm.Cammon.ViewModels.BaseModel.DetailBaseViewModel`5.Cancel"/>.</summary>
+        </member>
+        <member name="P:Mvvm.Cammon.ViewModels.BaseModel.EditBaseViewModel`3.Item">
+            <inheritdoc cref="F:Mvvm.Cammon.ViewModels.BaseModel.EditBaseViewModel`3.item"/>
+        </member>
+        <member name="F:Mvvm.Cammon.ViewModels.BaseModel.EditBaseViewModel`3.cancelCommand">
+            <summary>The backing field for <see cref="P:Mvvm.Cammon.ViewModels.BaseModel.EditBaseViewModel`3.CancelCommand"/>.</summary>
+        </member>
+        <member name="P:Mvvm.Cammon.ViewModels.BaseModel.EditBaseViewModel`3.CancelCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Mvvm.Cammon.ViewModels.BaseModel.EditBaseViewModel`3.Cancel"/>.</summary>
+        </member>
+        <member name="F:Mvvm.Cammon.ViewModels.BaseModel.EditBaseViewModel`3.saveCommand">
+            <summary>The backing field for <see cref="P:Mvvm.Cammon.ViewModels.BaseModel.EditBaseViewModel`3.SaveCommand"/>.</summary>
+        </member>
+        <member name="P:Mvvm.Cammon.ViewModels.BaseModel.EditBaseViewModel`3.SaveCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Mvvm.Cammon.ViewModels.BaseModel.EditBaseViewModel`3.Save"/>.</summary>
+        </member>
+        <member name="P:Mvvm.Cammon.ViewModels.BaseModel.ListBaseViewModel`6.SelectedItem">
+            <inheritdoc cref="F:Mvvm.Cammon.ViewModels.BaseModel.ListBaseViewModel`6.selectedItem"/>
+        </member>
+        <member name="P:Mvvm.Cammon.ViewModels.BaseModel.ListBaseViewModel`6.SearchVisible">
+            <inheritdoc cref="F:Mvvm.Cammon.ViewModels.BaseModel.ListBaseViewModel`6.searchVisible"/>
+        </member>
+        <member name="F:Mvvm.Cammon.ViewModels.BaseModel.ListBaseViewModel`6.searchEnabledCommand">
+            <summary>The backing field for <see cref="P:Mvvm.Cammon.ViewModels.BaseModel.ListBaseViewModel`6.SearchEnabledCommand"/>.</summary>
+        </member>
+        <member name="P:Mvvm.Cammon.ViewModels.BaseModel.ListBaseViewModel`6.SearchEnabledCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Mvvm.Cammon.ViewModels.BaseModel.ListBaseViewModel`6.SearchEnabled"/>.</summary>
+        </member>
+        <member name="F:Mvvm.Cammon.ViewModels.BaseModel.ListBaseViewModel`6.loadItemsCommand">
+            <summary>The backing field for <see cref="P:Mvvm.Cammon.ViewModels.BaseModel.ListBaseViewModel`6.LoadItemsCommand"/>.</summary>
+        </member>
+        <member name="P:Mvvm.Cammon.ViewModels.BaseModel.ListBaseViewModel`6.LoadItemsCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Mvvm.Cammon.ViewModels.BaseModel.ListBaseViewModel`6.LoadItemsAsync"/>.</summary>
+        </member>
+        <member name="F:Mvvm.Cammon.ViewModels.BaseModel.ListBaseViewModel`6.addItemCommand">
+            <summary>The backing field for <see cref="P:Mvvm.Cammon.ViewModels.BaseModel.ListBaseViewModel`6.AddItemCommand"/>.</summary>
+        </member>
+        <member name="P:Mvvm.Cammon.ViewModels.BaseModel.ListBaseViewModel`6.AddItemCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:Mvvm.Cammon.ViewModels.BaseModel.ListBaseViewModel`6.AddItemAsync(System.Object)"/>.</summary>
+        </member>
+        <member name="F:Mvvm.Cammon.ViewModels.BaseModel.ListBaseViewModel`6.itemTappedCommand">
+            <summary>The backing field for <see cref="P:Mvvm.Cammon.ViewModels.BaseModel.ListBaseViewModel`6.ItemTappedCommand"/>.</summary>
+        </member>
+        <member name="P:Mvvm.Cammon.ViewModels.BaseModel.ListBaseViewModel`6.ItemTappedCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:Mvvm.Cammon.ViewModels.BaseModel.ListBaseViewModel`6.ItemTappedAsync(`0)"/>.</summary>
+        </member>
+        <member name="P:Mvvm.Cammon.ViewModels.BaseModel.NewBaseViewModel`3.Item">
+            <inheritdoc cref="F:Mvvm.Cammon.ViewModels.BaseModel.NewBaseViewModel`3.item"/>
+        </member>
+        <member name="F:Mvvm.Cammon.ViewModels.BaseModel.NewBaseViewModel`3.cancelCommand">
+            <summary>The backing field for <see cref="P:Mvvm.Cammon.ViewModels.BaseModel.NewBaseViewModel`3.CancelCommand"/>.</summary>
+        </member>
+        <member name="P:Mvvm.Cammon.ViewModels.BaseModel.NewBaseViewModel`3.CancelCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Mvvm.Cammon.ViewModels.BaseModel.NewBaseViewModel`3.Cancel"/>.</summary>
+        </member>
+        <member name="F:Mvvm.Cammon.ViewModels.BaseModel.NewBaseViewModel`3.saveCommand">
+            <summary>The backing field for <see cref="P:Mvvm.Cammon.ViewModels.BaseModel.NewBaseViewModel`3.SaveCommand"/>.</summary>
+        </member>
+        <member name="P:Mvvm.Cammon.ViewModels.BaseModel.NewBaseViewModel`3.SaveCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Mvvm.Cammon.ViewModels.BaseModel.NewBaseViewModel`3.Save"/>.</summary>
+        </member>
+    </members>
+</doc>

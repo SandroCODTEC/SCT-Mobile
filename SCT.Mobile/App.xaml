@@ -1,0 +1,74 @@
+﻿<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:windows="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.WindowsSpecific;assembly=Microsoft.Maui.Controls"
+             xmlns:dxe="clr-namespace:DevExpress.Maui.Editors;assembly=DevExpress.Maui.Editors"
+             xmlns:dxc="clr-namespace:DevExpress.Maui.Controls;assembly=DevExpress.Maui.Controls"
+             xmlns:local="clr-namespace:SCT.Mobile"
+             x:Class="SCT.Mobile.App"
+             windows:Application.ImageDirectory="Assets">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Primary">#fb983b</Color>
+            <Color x:Key="NormalText">#55575c</Color>
+            <Color x:Key="NormalHeaderText">#55575c</Color>
+            <Color x:Key="NormalLightText">#959aa0</Color>
+            <Color x:Key="TitleTextColor">#f2f2f2</Color>
+            <Color x:Key="NormalBackgroundColor">#f2f2f2</Color>
+            <Style TargetType="NavigationPage">
+                <Setter Property="BarBackgroundColor" Value="{StaticResource Primary}"/>
+                <Setter Property="BarTextColor" Value="#f2f2f2"/>
+            </Style>
+            <Style x:Key="PrimaryButton" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="{StaticResource Primary}"/>
+                <Setter Property="TextColor" Value="#f2f2f2"/>
+            </Style>
+            <Style x:Key="DxPrimaryButton" TargetType="dxc:SimpleButton">
+                <Setter Property="BackgroundColor" Value="{StaticResource Primary}"/>
+                <Setter Property="TextColor" Value="#f2f2f2"/>
+            </Style>
+            <Style x:Key="DxDangerButton" TargetType="dxc:SimpleButton">
+                <Setter Property="BackgroundColor" Value="{StaticResource Primary}"/>
+                <Setter Property="TextColor" Value="#f2f2f2"/>
+            </Style>
+            <Style x:Key="ShellStyle" TargetType="Element">
+                <Setter Property="Shell.BackgroundColor" Value="{StaticResource Primary}" />
+                <Setter Property="Shell.TitleColor" Value="{StaticResource TitleTextColor}" />
+                <Setter Property="Shell.ForegroundColor" Value="{StaticResource TitleTextColor}" />
+                <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource NormalBackgroundColor}" />
+                <Setter Property="Shell.TabBarForegroundColor" Value="{StaticResource Primary}" />
+                <Setter Property="Shell.TabBarTitleColor" Value="{StaticResource Primary}" />
+                <Setter Property="Shell.TabBarUnselectedColor" Value="{StaticResource NormalText}" />
+                <Setter Property="NavigationPage.IconColor" Value="{StaticResource TitleTextColor}" />
+            </Style>
+
+            <Style x:Key="TextStyle" TargetType="Label">
+                <Setter Property="FontFamily" Value="Roboto"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="TextColor" Value="#53565c"/>
+            </Style>
+            <Style x:Key="ColorChipStyle" TargetType="dxe:Chip">
+                <Setter Property="SelectedBackgroundColor" Value="{Binding Source={RelativeSource Self}, Path=BackgroundColor}"/>
+                <Setter Property="PressedBackgroundColor" Value="{Binding Source={RelativeSource Self}, Path=BackgroundColor}"/>
+                <Setter Property="BorderColor" Value="{Binding Source={RelativeSource Self}, Path=BackgroundColor}"/>
+                <Setter Property="SelectedBorderColor" Value="{Binding Source={RelativeSource Self}, Path=BackgroundColor}"/>
+                <Setter Property="PressedBorderColor" Value="{Binding Source={RelativeSource Self}, Path=BackgroundColor}"/>
+                <Setter Property="WidthRequest" Value="40"/>
+                <Setter Property="HeightRequest" Value="40"/>
+                <Setter Property="Icon" Value="chip_checkicon"/>
+                <Setter Property="Padding" Value="8,0"/>
+                <Setter Property="IsIconVisible" Value="{Binding Source={RelativeSource Self}, Path=IsSelected}"/>
+            </Style>
+            <Style x:Key="ChoiceChipGroupStyle" TargetType="dxe:ChoiceChipGroup">
+                <Setter Property="ChipBorderColor" Value="#dfe5ed"/>
+                <Setter Property="ChipSelectedBorderColor" Value="{Binding Source={RelativeSource Self}, Path=ChipBorderColor}"/>
+                <Setter Property="HorizontalSpacing" Value="12"/>
+                <Setter Property="Padding" Value="0,14,0,10"/>
+                <Setter Property="AllowDeselect" Value="False"/>
+            </Style>
+            <Style x:Key="ChipGroupLayoutItemContainerStyle" TargetType="VerticalStackLayout">
+                <Setter Property="Margin" Value="0, 16"/>
+                <Setter Property="Spacing" Value="0"/>
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

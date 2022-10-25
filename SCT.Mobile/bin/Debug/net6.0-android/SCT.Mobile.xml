@@ -1,0 +1,200 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SCT.Mobile</name>
+    </assembly>
+    <members>
+        <member name="P:SCT.Mobile.ViewModels.BaseViewModel.IsBusy">
+            <inheritdoc cref="F:SCT.Mobile.ViewModels.BaseViewModel.isBusy"/>
+        </member>
+        <member name="P:SCT.Mobile.ViewModels.BaseViewModel.Title">
+            <inheritdoc cref="F:SCT.Mobile.ViewModels.BaseViewModel.title"/>
+        </member>
+        <member name="P:SCT.Mobile.ViewModels.Congregacoes.CongregacaoEditViewModel.Saida">
+            <inheritdoc cref="F:SCT.Mobile.ViewModels.Congregacoes.CongregacaoEditViewModel.saida"/>
+        </member>
+        <member name="P:SCT.Mobile.ViewModels.Congregacoes.CongregacaoEditViewModel.IsEditOpenSaida">
+            <inheritdoc cref="F:SCT.Mobile.ViewModels.Congregacoes.CongregacaoEditViewModel.isEditOpenSaida"/>
+        </member>
+        <member name="P:SCT.Mobile.ViewModels.Congregacoes.CongregacaoEditViewModel.IsAddOpenSaida">
+            <inheritdoc cref="F:SCT.Mobile.ViewModels.Congregacoes.CongregacaoEditViewModel.isAddOpenSaida"/>
+        </member>
+        <member name="F:SCT.Mobile.ViewModels.Congregacoes.CongregacaoEditViewModel.removeSaidaCommand">
+            <summary>The backing field for <see cref="P:SCT.Mobile.ViewModels.Congregacoes.CongregacaoEditViewModel.RemoveSaidaCommand"/>.</summary>
+        </member>
+        <member name="P:SCT.Mobile.ViewModels.Congregacoes.CongregacaoEditViewModel.RemoveSaidaCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:SCT.Mobile.ViewModels.Congregacoes.CongregacaoEditViewModel.RemoveSaida(SCT.Mobile.Models.Saida)"/>.</summary>
+        </member>
+        <member name="F:SCT.Mobile.ViewModels.Congregacoes.CongregacaoEditViewModel.saveEditSaidaCommand">
+            <summary>The backing field for <see cref="P:SCT.Mobile.ViewModels.Congregacoes.CongregacaoEditViewModel.SaveEditSaidaCommand"/>.</summary>
+        </member>
+        <member name="P:SCT.Mobile.ViewModels.Congregacoes.CongregacaoEditViewModel.SaveEditSaidaCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:SCT.Mobile.ViewModels.Congregacoes.CongregacaoEditViewModel.SaveEditSaida"/>.</summary>
+        </member>
+        <member name="F:SCT.Mobile.ViewModels.Congregacoes.CongregacaoEditViewModel.saveAddSaidaCommand">
+            <summary>The backing field for <see cref="P:SCT.Mobile.ViewModels.Congregacoes.CongregacaoEditViewModel.SaveAddSaidaCommand"/>.</summary>
+        </member>
+        <member name="P:SCT.Mobile.ViewModels.Congregacoes.CongregacaoEditViewModel.SaveAddSaidaCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:SCT.Mobile.ViewModels.Congregacoes.CongregacaoEditViewModel.SaveAddSaida"/>.</summary>
+        </member>
+        <member name="F:SCT.Mobile.ViewModels.Congregacoes.CongregacaoEditViewModel.openAddSaidaCommand">
+            <summary>The backing field for <see cref="P:SCT.Mobile.ViewModels.Congregacoes.CongregacaoEditViewModel.OpenAddSaidaCommand"/>.</summary>
+        </member>
+        <member name="P:SCT.Mobile.ViewModels.Congregacoes.CongregacaoEditViewModel.OpenAddSaidaCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:SCT.Mobile.ViewModels.Congregacoes.CongregacaoEditViewModel.OpenAddSaida"/>.</summary>
+        </member>
+        <member name="F:SCT.Mobile.ViewModels.Congregacoes.CongregacaoEditViewModel.openEditSaidaCommand">
+            <summary>The backing field for <see cref="P:SCT.Mobile.ViewModels.Congregacoes.CongregacaoEditViewModel.OpenEditSaidaCommand"/>.</summary>
+        </member>
+        <member name="P:SCT.Mobile.ViewModels.Congregacoes.CongregacaoEditViewModel.OpenEditSaidaCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:SCT.Mobile.ViewModels.Congregacoes.CongregacaoEditViewModel.OpenEditSaida(SCT.Mobile.Models.Saida)"/>.</summary>
+        </member>
+        <member name="F:SCT.Mobile.ViewModels.Congregacoes.CongregacaoEditViewModel.closeSaidaCommand">
+            <summary>The backing field for <see cref="P:SCT.Mobile.ViewModels.Congregacoes.CongregacaoEditViewModel.CloseSaidaCommand"/>.</summary>
+        </member>
+        <member name="P:SCT.Mobile.ViewModels.Congregacoes.CongregacaoEditViewModel.CloseSaidaCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:SCT.Mobile.ViewModels.Congregacoes.CongregacaoEditViewModel.CloseSaida"/>.</summary>
+        </member>
+        <member name="F:SCT.Mobile.ViewModels.Eventos.EventoListViewModel.searchCommand">
+            <summary>The backing field for <see cref="P:SCT.Mobile.ViewModels.Eventos.EventoListViewModel.SearchCommand"/>.</summary>
+        </member>
+        <member name="P:SCT.Mobile.ViewModels.Eventos.EventoListViewModel.SearchCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:SCT.Mobile.ViewModels.Eventos.EventoListViewModel.Search(System.String)"/>.</summary>
+        </member>
+        <member name="P:SCT.Mobile.ViewModels.MainViewModel.ExisteEvento">
+            <inheritdoc cref="F:SCT.Mobile.ViewModels.MainViewModel.existeEvento"/>
+        </member>
+        <member name="P:SCT.Mobile.ViewModels.MainViewModel.ExisteCongregacao">
+            <inheritdoc cref="F:SCT.Mobile.ViewModels.MainViewModel.existeCongregacao"/>
+        </member>
+        <member name="P:SCT.Mobile.ViewModels.MainViewModel.Congregacao">
+            <inheritdoc cref="F:SCT.Mobile.ViewModels.MainViewModel.congregacao"/>
+        </member>
+        <member name="P:SCT.Mobile.ViewModels.MainViewModel.Evento">
+            <inheritdoc cref="F:SCT.Mobile.ViewModels.MainViewModel.evento"/>
+        </member>
+        <member name="F:SCT.Mobile.ViewModels.MainViewModel.checkExisteCongregacaoCommand">
+            <summary>The backing field for <see cref="P:SCT.Mobile.ViewModels.MainViewModel.CheckExisteCongregacaoCommand"/>.</summary>
+        </member>
+        <member name="P:SCT.Mobile.ViewModels.MainViewModel.CheckExisteCongregacaoCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:SCT.Mobile.ViewModels.MainViewModel.CheckExisteCongregacao"/>.</summary>
+        </member>
+        <member name="F:SCT.Mobile.ViewModels.MainViewModel.checkExisteEventoCommand">
+            <summary>The backing field for <see cref="P:SCT.Mobile.ViewModels.MainViewModel.CheckExisteEventoCommand"/>.</summary>
+        </member>
+        <member name="P:SCT.Mobile.ViewModels.MainViewModel.CheckExisteEventoCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:SCT.Mobile.ViewModels.MainViewModel.CheckExisteEvento"/>.</summary>
+        </member>
+        <member name="F:SCT.Mobile.ViewModels.Passageiros.PassageiroListViewModel.searchCommand">
+            <summary>The backing field for <see cref="P:SCT.Mobile.ViewModels.Passageiros.PassageiroListViewModel.SearchCommand"/>.</summary>
+        </member>
+        <member name="P:SCT.Mobile.ViewModels.Passageiros.PassageiroListViewModel.SearchCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:SCT.Mobile.ViewModels.Passageiros.PassageiroListViewModel.Search(System.String)"/>.</summary>
+        </member>
+        <member name="F:SCT.Mobile.ViewModels.Passagens.PassagemListViewModel.searchCommand">
+            <summary>The backing field for <see cref="P:SCT.Mobile.ViewModels.Passagens.PassagemListViewModel.SearchCommand"/>.</summary>
+        </member>
+        <member name="P:SCT.Mobile.ViewModels.Passagens.PassagemListViewModel.SearchCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:SCT.Mobile.ViewModels.Passagens.PassagemListViewModel.Search(System.String)"/>.</summary>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Button.TextColorTo(Microsoft.Maui.Controls.Button,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_DatePicker.TextColorTo(Microsoft.Maui.Controls.DatePicker,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Editor.TextColorTo(Microsoft.Maui.Controls.Editor,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Entry.TextColorTo(Microsoft.Maui.Controls.Entry,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Label.TextColorTo(Microsoft.Maui.Controls.Label,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Picker.TextColorTo(Microsoft.Maui.Controls.Picker,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_RadioButton.TextColorTo(Microsoft.Maui.Controls.RadioButton,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_SearchBar.TextColorTo(Microsoft.Maui.Controls.SearchBar,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_TimePicker.TextColorTo(Microsoft.Maui.Controls.TimePicker,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+    </members>
+</doc>

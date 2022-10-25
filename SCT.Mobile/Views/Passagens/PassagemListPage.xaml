@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="SCT.Mobile.Views.Passagens.PassagemListPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:dxcv="clr-namespace:DevExpress.Maui.CollectionView;assembly=DevExpress.Maui.CollectionView"
+    xmlns:local="clr-namespace:SCT.Mobile.ViewModels.Passagens"
+    xmlns:controls="clr-namespace:SCT.Mobile.Controls"
+    xmlns:dxe="clr-namespace:DevExpress.Maui.Editors;assembly=DevExpress.Maui.Editors"
+    xmlns:dxc="clr-namespace:DevExpress.Maui.Controls;assembly=DevExpress.Maui.Controls"
+    xmlns:model="clr-namespace:SCT.Mobile.Models"
+    IconImageSource="browse"
+    Title="{Binding Title}">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Command="{Binding SearchEnabledCommand}" Priority="0" IconImageSource="{Binding IconSearch}" />
+        <ToolbarItem Command="{Binding AddItemCommand}" IconImageSource="add" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+                <dxe:TextEdit 
+                    x:Name="textSearch"
+                    StartIcon="search" BoxMode="Outlined" 
+                    BorderThickness="0" FocusedBorderThickness="0"
+                    AffixFontSize="Small"
+                    PlaceholderText="Pesquisar..."
+                    IsVisible="{Binding SearchVisible}"
+                    TextChangedCommand="{Binding SearchCommand}"
+                    TextChangedCommandParameter="{Binding Text, Source={x:Reference textSearch}}"
+                    >
+                </dxe:TextEdit>
+            </StackLayout>
+            <dxcv:DXCollectionView
+                x:Name="ItemsListView"
+                ItemsSource="{Binding Items}"
+                SelectionMode="None">
+                <dxcv:DXCollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <dxcv:SwipeContainer>
+                            <dxcv:SwipeContainer.ItemView Padding="10,10,10,10">
+                                <HorizontalStackLayout Margin="10,10,10,0">
+                                    <Grid Margin="0" Padding="0" ColumnSpacing="0" RowSpacing="0">
+                                        <Frame BackgroundColor="White"
+                                       Padding="0" Margin="0"
+                                       HeightRequest="48"
+                                       WidthRequest="48"
+                                       VerticalOptions="Center"
+                                       HorizontalOptions="Center"
+                                       HasShadow="False"   
+                                       CornerRadius="24">
+                                            <Frame.IsClippedToBounds>
+                                                <OnPlatform x:TypeArguments="x:Boolean">
+                                                    <On Platform="iOS">true</On>
+                                                    <On Platform="Android">false</On>
+                                                </OnPlatform>
+                                            </Frame.IsClippedToBounds>
+                                            <Label
+                                                Margin="0,-2,0,0"
+                                        FontSize="20"
+                                        LineBreakMode="NoWrap"
+                                        HorizontalOptions="Center"
+                                        VerticalOptions="Center"
+                                        Style="{DynamicResource ListItemTextStyle}"
+                                        Text="{Binding Avatar}"
+                                        TextColor="{StaticResource NormalText}" />
+                                        </Frame>
+                                        <Ellipse Margin="0"
+                                     Fill="Transparent"
+                                     Stroke="LightGray" 
+                                     StrokeThickness="1"
+                                     HeightRequest="50"
+                                     WidthRequest="50"
+                                     VerticalOptions="Center"
+                                     HorizontalOptions="Center">
+                                        </Ellipse>
+                                    </Grid>
+
+                                    <StackLayout
+                                    Margin="0"
+                                    Padding="15,10,10,10"
+                                    Spacing="0"
+                                    x:DataType="model:Passagem">
+                                        <Label
+                                        FontFamily="Roboto"
+                                        FontSize="14"
+                                        LineBreakMode="NoWrap"
+                                        Style="{DynamicResource ListItemTextStyle}"
+                                        Text="{Binding Passageiro.Nome}"
+                                        TextColor="{StaticResource NormalText}" />
+                                        <Label
+                                        FontFamily="Roboto"
+                                        FontSize="12"
+                                        LineBreakMode="NoWrap"
+                                        Style="{DynamicResource ListItemDetailTextStyle}"
+                                        Text="{Binding Passageiro.Documentacao}"
+                                        TextColor="{StaticResource NormalLightText}" />
+                                    </StackLayout>
+                                </HorizontalStackLayout>
+
+                            </dxcv:SwipeContainer.ItemView>
+
+                            <dxcv:SwipeContainer.StartSwipeItems>
+                            </dxcv:SwipeContainer.StartSwipeItems>
+                        </dxcv:SwipeContainer>
+                    </DataTemplate>
+                </dxcv:DXCollectionView.ItemTemplate>
+            </dxcv:DXCollectionView>
+            <StackLayout.GestureRecognizers>
+                <TapGestureRecognizer
+                    Command="{Binding Source={RelativeSource 
+                         AncestorType={x:Type local:PassagemListViewModel}}, Path=ItemTappedCommand}"
+                    CommandParameter="{Binding .}"
+                    NumberOfTapsRequired="1" />
+            </StackLayout.GestureRecognizers>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+    

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    x:Class="SCT.Mobile.Views.Passagens.PassagemNewPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:dxdf="clr-namespace:DevExpress.Maui.DataForm;assembly=DevExpress.Maui.Editors"
+    xmlns:dxe="clr-namespace:DevExpress.Maui.Editors;assembly=DevExpress.Maui.Editors"
+    BackgroundColor="{StaticResource NormalBackgroundColor}"
+    Title="{Binding Title}">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Clicked="Save_Clicked" IconImageSource="save" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout>
+            <dxdf:DataFormView
+                x:Name="dataForm"
+                AllowCollapseGroups="False"
+                BackgroundColor="{StaticResource NormalBackgroundColor}"
+                CommitMode="LostFocus"
+                ContentPadding="12,0"
+                DataObject="{Binding Item}"
+                EditorBoxMode="Filled"
+                EditorLabelColor="Gray"
+                EditorLabelWidth="40"
+                GroupHeaderBackgroundColor="#e6e6e6"
+                GroupHeaderPadding="2,8"
+                GroupHeaderTextColor="#000000"
+                IsEditorLabelVisible="False"
+                IsLastRowSeparatorVisible="False"
+                ReserveBottomTextLine="False"
+                RowSeparatorColor="#aaaaaa"
+                RowSeparatorThickness="1"
+                ValidationMode="LostFocus" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+    
